@@ -49,25 +49,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FizzBuzz.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FizzBuzz.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="150">
+              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FizzBuzzTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FizzBuzzTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+            <state relative-caret-position="370">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/com/industriallogic/collections/List.java" />
         <option value="$PROJECT_DIR$/src/com/industriallogic/collections/Set.java" />
         <option value="$PROJECT_DIR$/src/com/industriallogic/collections/AbstractCollection.java" />
-        <option value="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/test/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.java" />
+        <option value="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java" />
       </list>
     </option>
   </component>
@@ -265,7 +265,7 @@
     <property name="FullScreen" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="JUnit.FizzBuzzTest">
+  <component name="RunManager" selected="JUnit.com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java">
     <configuration default="false" name="All in SmellectionsPart1-Problem-Java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SmellectionsPart1-Problem-Java" />
@@ -327,6 +327,32 @@
       <option name="MAIN_CLASS_NAME" value="com.industriallogic.collections.fizzbuzz.FizzBuzzTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.industriallogic.collections.fizzbuzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SmellectionsPart1-Problem-Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.industriallogic.collections.fizzbuzz" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -583,16 +609,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SmellectionsPart1-Problem-Java" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest.answer_given_1_return_1" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest.answer_given_1_return_1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in SmellectionsPart1-Problem-Java" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FizzBuzzTest.answer_given_1_return_1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in SmellectionsPart1-Problem-Java" />
       </list>
     </recent_temporary>
   </component>
@@ -610,12 +638,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_SmellectionsPart1-Problem-Java - 2016.11.19 at 12h 00m 52s.xml">
-      <configuration name="All in SmellectionsPart1-Problem-Java" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 28m 58s.xml">
-      <configuration name="FizzBuzzTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 31m 22s.xml">
       <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
@@ -631,14 +653,20 @@
     <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 42m 47s.xml">
       <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTest_answer_given_1_return_1 - 2016.11.19 at 13h 26m 50s.xml">
-      <configuration name="FizzBuzzTest.answer_given_1_return_1" configurationId="JUnit" />
+    <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 45m 41s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTest_answer_given_1_return_1 - 2016.11.19 at 13h 28m 43s.xml">
-      <configuration name="FizzBuzzTest.answer_given_1_return_1" configurationId="JUnit" />
+    <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 50m 11s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2016.11.19 at 13h 52m 38s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FizzBuzzTest_answer_given_1_return_1 - 2016.11.19 at 13h 30m 51s.xml">
       <configuration name="FizzBuzzTest.answer_given_1_return_1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_industriallogic_collections_fizzbuzz_in_SmellectionsPart1-Problem-Java - 2016.11.19 at 13h 51m 01s.xml">
+      <configuration name="com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -788,23 +816,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java">
+    <entry file="file://$PROJECT_DIR$/test/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="370">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

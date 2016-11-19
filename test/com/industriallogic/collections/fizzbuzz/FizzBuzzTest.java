@@ -34,6 +34,20 @@ public class FizzBuzzTest {
     public void answer_given_3_return_fizz(){
         String actual = fizzBuzz.answer(3);
 
-        Assert.assertEquals("Fizz", actual);
+        Assert.assertEquals(FizzBuzz.FIZZ, actual);
+    }
+
+    @Test
+    public void answer_given_9_return_fizz(){
+        String actual = fizzBuzz.answer(9);
+
+        Assert.assertEquals(FizzBuzz.FIZZ, actual);
+    }
+
+    @Test
+    public void answer_given_6_return_fizz(){
+        String actual = fizzBuzz.answer(6);
+
+        Assert.assertEquals(FizzBuzz.FIZZ, actual);
     }
 }
