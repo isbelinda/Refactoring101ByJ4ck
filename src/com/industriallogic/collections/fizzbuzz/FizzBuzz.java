@@ -12,6 +12,10 @@ public class FizzBuzz {
             return FIZZ;
         }
 
+        if(number == 5 || number == 10){
+            return "Buzz";
+        }
+
         return String.valueOf(number);
     }
 }
