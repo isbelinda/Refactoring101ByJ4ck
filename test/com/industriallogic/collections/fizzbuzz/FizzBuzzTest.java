@@ -55,13 +55,22 @@ public class FizzBuzzTest {
     public void answer_given_5_return_buzz(){
         String actual = fizzBuzz.answer(5);
 
-        Assert.assertEquals("Buzz", actual);
+        Assert.assertEquals(FizzBuzz.BUZZ, actual);
     }
 
     @Test
     public void answer_given_10_return_buzz(){
         String actual = fizzBuzz.answer(10);
 
-        Assert.assertEquals("Buzz", actual);
+        Assert.assertEquals(FizzBuzz.BUZZ, actual);
     }
+
+    @Test
+    public void answer_given_20_return_buzz(){
+        String actual = fizzBuzz.answer(20);
+
+        Assert.assertEquals(FizzBuzz.BUZZ, actual);
+    }
+
+
 }
