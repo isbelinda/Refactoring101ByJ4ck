@@ -1,6 +1,7 @@
 package com.industriallogic.collections.fizzbuzz;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -8,10 +9,15 @@ import org.junit.Test;
  */
 public class FizzBuzzTest {
 
+    private FizzBuzz fizzBuzz;
+
+    @Before
+    public void setup(){
+        fizzBuzz = new FizzBuzz();
+    }
+
     @Test
     public void answer_given_1_return_1(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
         String actual = fizzBuzz.answer(1);
 
         Assert.assertEquals("1", actual);
@@ -19,10 +25,15 @@ public class FizzBuzzTest {
 
     @Test
     public void answer_given_2_return_2(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
         String actual = fizzBuzz.answer(2);
 
         Assert.assertEquals("2", actual);
+    }
+
+    @Test
+    public void answer_given_3_return_fizz(){
+        String actual = fizzBuzz.answer(3);
+
+        Assert.assertEquals("Fizz", actual);
     }
 }
