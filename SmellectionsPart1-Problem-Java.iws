@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a9a33a6-507a-4a19-820b-dc4067e93ffb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/Rule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/industriallogic/collections/fizzbuzz/FizzBuzz.class" afterPath="$PROJECT_DIR$/bin/com/industriallogic/collections/fizzbuzz/FizzBuzz.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.class" afterPath="$PROJECT_DIR$/bin/com/industriallogic/collections/fizzbuzz/FizzBuzzTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmellectionsPart1-Problem-Java.iws" afterPath="$PROJECT_DIR$/SmellectionsPart1-Problem-Java.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/BuzzRule.java" afterPath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/BuzzRule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java" afterPath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzzRule.java" afterPath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzzRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzRule.java" afterPath="$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzRule.java" />
     </list>
     <ignored path="SmellectionsPart1-Problem-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +26,8 @@
       <file leaf-file-name="FizzBuzz.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#250#256#0" expanded="true" />
@@ -710,9 +703,6 @@
     <history-entry file="FizzBuzzTest_answer_given_15_return_FizzBuzz - 2016.11.19 at 14h 07m 38s.xml">
       <configuration name="FizzBuzzTest.answer_given_15_return_FizzBuzz" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTest_answer_given_20_return_buzz - 2016.11.19 at 14h 03m 26s.xml">
-      <configuration name="FizzBuzzTest.answer_given_20_return_buzz" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FizzBuzzTest_answer_given_30_return_FizzBuzz - 2016.11.19 at 14h 08m 51s.xml">
       <configuration name="FizzBuzzTest.answer_given_30_return_FizzBuzz" configurationId="JUnit" />
     </history-entry>
@@ -731,10 +721,13 @@
     <history-entry file="com_industriallogic_collections_fizzbuzz_in_SmellectionsPart1-Problem-Java - 2016.11.19 at 14h 59m 59s.xml">
       <configuration name="com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_industriallogic_collections_fizzbuzz_in_SmellectionsPart1-Problem-Java - 2016.11.19 at 15h 00m 40s.xml">
+      <configuration name="com.industriallogic.collections.fizzbuzz in SmellectionsPart1-Problem-Java" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -948,8 +941,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/industriallogic/collections/fizzbuzz/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#250#256#0" expanded="true" />

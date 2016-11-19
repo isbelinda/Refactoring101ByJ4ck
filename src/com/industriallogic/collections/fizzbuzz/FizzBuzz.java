@@ -15,16 +15,10 @@ public class FizzBuzz {
         rules.add(new FizzRule());
         rules.add(new BuzzRule());
 
-        if(rules.get(0).check(number)){
-            return rules.get(0).answer();
-        }
-
-        if(rules.get(1).check(number)){
-            return rules.get(1).answer();
-        }
-
-        if(rules.get(2).check(number)){
-            return rules.get(2).answer();
+        for(Rule rule: rules){
+            if(rule.check(number)){
+                return rule.answer();
+            }
         }
 
         return String.valueOf(number);
