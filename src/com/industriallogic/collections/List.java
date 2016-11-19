@@ -11,27 +11,34 @@
 
 package com.industriallogic.collections;
 
-public class List extends AbstractList {
-	private Object[] elements = new Object[10];
-	private int size = 0;
+public class List extends AbstractCollection {
 	private boolean readOnly;
 
-	public boolean isEmpty() {
-		return size == 0;
+	public void add(Object element) {
+		if (readOnly) {
+			return;
+		}
+
+		if (isFull()) {
+			extendList();
+		}
+		pushList(element);
 	}
 
-	public void add(Object element) {
-		if (!readOnly) {
-			int newSize = size + 1;
-			if (newSize > elements.length) {
-				Object[] newElements =
-					new Object[elements.length + 10];
-				for (int i = 0; i < size; i++)
-					newElements[i] = elements[i];
-				elements = newElements;
-			}
-			elements[size++] = element;
-		}
+	private void pushList(Object element) {
+		elements[size++] = element;
+	}
+
+	private boolean isFull() {
+		return size + 1 > elements.length;
+	}
+
+	private void extendList() {
+		Object[] newElements =
+                new Object[elements.length + 10];
+		for (int i = 0; i < size; i++)
+            newElements[i] = get(i);
+		elements = newElements;
 	}
 
 	public boolean contains(Object element) {
@@ -50,23 +57,19 @@ public class List extends AbstractList {
 			return false;
 		else 	
 			for (int i = 0; i < size; i++)
-				if (elements[i].equals(element)) {
+				if (get(i).equals(element)) {
 					elements[i] = null;
 					Object[] newElements = new Object[size - 1];
 					int k = 0;
 					for (int j = 0; j < size; j++) {
-						if (elements[j] != null)
-							newElements[k++] = elements[j];
+						if (get(j) != null)
+							newElements[k++] = get(j);
 					}
 					size--;
 					elements = newElements;
 					return true;
 				}
 		return false;
-	}
-	
-	public Object get(int i) {
-		return elements[i];
 	}
 
 	public int capacity() {

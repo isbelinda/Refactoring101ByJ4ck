@@ -11,9 +11,7 @@
 
 package com.industriallogic.collections;
 
-public class Set extends AbstractSet {
-	private static int INITIAL_CAPACITY = 10;
-	private Object[] elements = new Object[INITIAL_CAPACITY];
+public class Set extends AbstractCollection {
 	private int size = 0;
 	private boolean readOnly;
 
@@ -68,7 +66,7 @@ public class Set extends AbstractSet {
 		return false;
 	}
 
-	public Object getElementAt(int index) {
+	public Object get(int index) {
 		return elements[index];
 	}
 
