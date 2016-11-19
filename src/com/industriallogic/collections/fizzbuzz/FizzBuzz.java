@@ -1,24 +1,30 @@
 package com.industriallogic.collections.fizzbuzz;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Belinda on 11/19/16.
  */
 public class FizzBuzz {
 
     public String answer(int number){
-        BuzzRule buzzRule = new BuzzRule();
-        FizzRule fizzRule = new FizzRule();
-        FizzBuzzRule fizzBuzzRule = new FizzBuzzRule();
 
-        if(fizzBuzzRule.isFizzBuzz(number)){
-            return fizzBuzzRule.answer();
-        }
-        if(fizzRule.isFizz(number)){
-            return fizzRule.answer();
+        List<Rule> rules = new ArrayList<Rule>();
+        rules.add(new FizzBuzzRule());
+        rules.add(new FizzRule());
+        rules.add(new BuzzRule());
+
+        if(rules.get(0).check(number)){
+            return rules.get(0).answer();
         }
 
-        if(buzzRule.isBuzz(number)){
-            return buzzRule.answer();
+        if(rules.get(1).check(number)){
+            return rules.get(1).answer();
+        }
+
+        if(rules.get(2).check(number)){
+            return rules.get(2).answer();
         }
 
         return String.valueOf(number);
