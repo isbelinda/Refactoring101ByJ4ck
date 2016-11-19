@@ -34,56 +34,56 @@ public class FizzBuzzTest {
     public void answer_given_3_return_fizz(){
         String actual = fizzBuzz.answer(3);
 
-        Assert.assertEquals(FizzBuzz.FIZZ, actual);
+        Assert.assertEquals(FizzRule.FIZZ, actual);
     }
 
     @Test
     public void answer_given_9_return_fizz(){
         String actual = fizzBuzz.answer(9);
 
-        Assert.assertEquals(FizzBuzz.FIZZ, actual);
+        Assert.assertEquals(FizzRule.FIZZ, actual);
     }
 
     @Test
     public void answer_given_6_return_fizz(){
         String actual = fizzBuzz.answer(6);
 
-        Assert.assertEquals(FizzBuzz.FIZZ, actual);
+        Assert.assertEquals(FizzRule.FIZZ, actual);
     }
 
     @Test
     public void answer_given_5_return_buzz(){
         String actual = fizzBuzz.answer(5);
 
-        Assert.assertEquals(FizzBuzz.BUZZ, actual);
+        Assert.assertEquals(BuzzRule.BUZZ, actual);
     }
 
     @Test
     public void answer_given_10_return_buzz(){
         String actual = fizzBuzz.answer(10);
 
-        Assert.assertEquals(FizzBuzz.BUZZ, actual);
+        Assert.assertEquals(BuzzRule.BUZZ, actual);
     }
 
     @Test
     public void answer_given_20_return_buzz(){
         String actual = fizzBuzz.answer(20);
 
-        Assert.assertEquals(FizzBuzz.BUZZ, actual);
+        Assert.assertEquals(BuzzRule.BUZZ, actual);
     }
 
     @Test
     public void answer_given_15_return_FizzBuzz(){
         String actual = fizzBuzz.answer(15);
 
-        Assert.assertEquals(FizzBuzz.FIZZ_BUZZ, actual);
+        Assert.assertEquals(FizzBuzzRule.FIZZ_BUZZ, actual);
     }
 
     @Test
     public void answer_given_30_return_FizzBuzz(){
         String actual = fizzBuzz.answer(30);
 
-        Assert.assertEquals(FizzBuzz.FIZZ_BUZZ, actual);
+        Assert.assertEquals(FizzBuzzRule.FIZZ_BUZZ, actual);
     }
 
 

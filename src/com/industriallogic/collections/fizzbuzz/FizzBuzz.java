@@ -5,34 +5,23 @@ package com.industriallogic.collections.fizzbuzz;
  */
 public class FizzBuzz {
 
-    public static final String FIZZ = "Fizz";
-    public static final String BUZZ = "Buzz";
-    public static final String FIZZ_BUZZ = "FizzBuzz";
-
     public String answer(int number){
-        if(isFizzBuzz(number)){
-            return FIZZ_BUZZ;
+        BuzzRule buzzRule = new BuzzRule();
+        FizzRule fizzRule = new FizzRule();
+        FizzBuzzRule fizzBuzzRule = new FizzBuzzRule();
+
+        if(fizzBuzzRule.isFizzBuzz(number)){
+            return fizzBuzzRule.answer();
         }
-        if(isFizz(number)){
-            return FIZZ;
+        if(fizzRule.isFizz(number)){
+            return fizzRule.answer();
         }
 
-        if(isBuzz(number)){
-            return BUZZ;
+        if(buzzRule.isBuzz(number)){
+            return buzzRule.answer();
         }
 
         return String.valueOf(number);
     }
 
-    private boolean isFizzBuzz(int number) {
-        return isFizz(number) && isBuzz(number);
-    }
-
-    private boolean isBuzz(int number) {
-        return number % 5 == 0;
-    }
-
-    private boolean isFizz(int number) {
-        return number % 3 == 0;
-    }
 }
