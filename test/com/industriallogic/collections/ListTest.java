@@ -1,150 +1,119 @@
-// ***************************************************************************
-// Copyright (c) 2014, Industrial Logic, Inc., All Rights Reserved.
-//
-// This code is the exclusive property of Industrial Logic, Inc. It may ONLY be
-// used by students during Industrial Logic's workshops or by individuals
-// who are being coached by Industrial Logic on a project.
-//
-// This code may NOT be copied or used for any other purpose without the prior
-// written consent of Industrial Logic, Inc.
-// ****************************************************************************
-
 package com.industriallogic.collections;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import org.junit.Before;
+import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * Created by Belinda on 11/19/16.
+ */
 public class ListTest {
-	private List empty;
-	private List oneElement;
-	private List manyElement;
 
-	@Before
-	public void setUp() {
-		empty = new List();
-		oneElement = new List();
-		oneElement.add("sophia");
-		manyElement = new List();
-		manyElement.add("josh");
-		manyElement.add("sasha");
-	}
+    @Test
+    public void testConstructor(){
+        new List();
+    }
 
-	@Test
-	public void isEmpty() {
-		assertTrue(empty.isEmpty());
-		assertTrue(!oneElement.isEmpty());
-	}
+    @Test
+    public void testAddList(){
 
-	@Test
-	public void contains() {
-		assertTrue(manyElement.contains("josh"));
-		assertTrue(!manyElement.contains("tracy"));
-	}
+    }
 
-	@Test
-	public void size() {
-		assertEquals(0, empty.size());
-		assertEquals(1, oneElement.size());
-		assertTrue(manyElement.size() > 1);
-	}
+    @Test
+    public void testAddNull(){
+        List list = new List();
 
-	@Test
-	public void allowDuplicates() {
-		manyElement.add("sasha");
-		assertEquals(3, manyElement.size());
-	}
+        list.add(null);
+        list.add("");
+    }
 
-	@Test
-	public void remove() {
-		assertTrue(oneElement.remove("sophia"));
-		assertEquals(0, oneElement.size());
-		assertTrue(manyElement.remove("josh"));
-		assertEquals(1, manyElement.size());
-	}
+    @Test
+    public void testSize(){
+        List list = new List();
+        list.add("");
 
-	@Test
-	public void removeCollapsesList() {
-		manyElement.add("tracy");
-		assertEquals(3, manyElement.size());
-		manyElement.remove("sasha");
-		assertEquals(2, manyElement.size());
-		assertEquals("tracy", manyElement.get(1));
-	}
+        Assert.assertEquals(list.size(), 1);
 
-	@Test
-	public void addAll() {
-		oneElement.addAll(manyElement);
-		assertEquals(3, oneElement.size());
-	}
+    }
 
-	@Test
-	public void addAllWithSet() {
-		Set smallSet = new Set();
-		smallSet.add("Dave");
-		oneElement.addAll(smallSet);
-		assertEquals(2, oneElement.size());
-	}
+    @Test
+    public void testAddElement(){
+        List list = new List();
+        list.add("abc");
 
-	@Test(expected = ArrayIndexOutOfBoundsException.class)
-	public void getWhenIndexOutOfBounds() {
-		empty.get(12);
-	}
+        Assert.assertEquals(list.get(0), "abc");
+    }
 
-	@Test
-	public void expandability() {
-		List expandableList = new List();
-		assertEquals(10, expandableList.capacity());
-		for (int i = 0; i < 11; i++)
-			expandableList.add(i);
-		assertEquals(11, expandableList.size());
-		assertEquals(20, expandableList.capacity());
-	}
+    @Test
+    public void testAddSize(){
+        List list = new List();
 
-	@Test
-	public void override() {
-		oneElement.set(0, "mary");
-		assertEquals("mary", oneElement.get(0));
-	}
+        Assert.assertEquals(0, list.size());
 
-	@Test
-	public void overrideWhenOutOfBounds() {
-		try {
-			oneElement.set(8, "mary");
-			fail("should have thrown ArrayIndexOutOfBoundsException");
-		} catch (ArrayIndexOutOfBoundsException expectedException) {
-			assertTrue("expected behavior", true);
-		}
-	}
+        list.add("abc");
 
-	@Test
-	public void readOnlyOnAdd() {
-		oneElement.setReadOnly(true);
-		oneElement.add("eva");
-		assertEquals(1, oneElement.size());
-	}
+        Assert.assertEquals(1, list.size());
 
-	@Test
-	public void readOnlyOnSet() {
-		oneElement.setReadOnly(true);
-		oneElement.set(0, "eva");
-		assertEquals("sophia", oneElement.get(0));
-	}
+        list.add("abc");
 
-	@Test
-	public void readOnlyOnRemove() {
-		oneElement.setReadOnly(true);
-		oneElement.remove("sophia");
-		assertEquals(1, oneElement.size());
-	}
+        Assert.assertEquals(2, list.size());
 
-	@Test
-	public void readOnlyOnAddAll() {
-		oneElement.setReadOnly(true);
-		oneElement.addAll(manyElement);
-		assertEquals(1, oneElement.size());
-	}
+        list.add("abc");
+        list.add("abc");
+
+        Assert.assertEquals(4, list.size());
+    }
+
+    @Test
+    public void testCapacity(){
+        List list = new List();
+
+        Assert.assertEquals(10, list.capacity());
+
+        list.add("1");
+        Assert.assertEquals(10, list.capacity());
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
+        list.add("7");
+        list.add("8");
+        list.add("9");
+        list.add("10");
+        Assert.assertEquals(10, list.capacity());
+        list.add("11");
+        list.add("12");
+        list.add("13");
+        list.add("14");
+        list.add("15");
+        Assert.assertEquals(20, list.capacity());
+        list.add("16");
+        list.add("17");
+        list.add("18");
+        list.add("19");
+        list.add("20");
+        Assert.assertEquals(20, list.capacity());
+        list.add("21");
+        Assert.assertEquals(30, list.capacity());
+
+    }
+
+    @Test
+    public void testReadOnly(){
+        List list = new List();
+
+        list.setReadOnly(true);
+
+        list.add("abc");
+
+        Assert.assertEquals(0, list.size());
+
+        list.setReadOnly(false);
+
+        list.add("abc");
+
+        Assert.assertEquals(1, list.size());
+
+    }
+
 }
